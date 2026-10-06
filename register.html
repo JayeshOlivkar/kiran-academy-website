@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <style>
+        div {
+            border: 2px solid black;
+            width: 500px;
+            height: 600px;
+            margin: auto;
+            background-color: rgb(238, 189, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <h1>Registration</h1>
+        <form action="Reg_succ.html">
+            <label for="fnmae">Enter Full Name</label>
+            <input type="text" name="fname" id="fname1" placeholder="Enter Full Name">
+            <br><br>
+            <label for="username">Enter Username</label>
+            <input type="text" name="username" id="username1" placeholder="Enter Password">
+            <br><br>
+            <label for="">Enter Password</label>
+            <input type="password" name="password" id="password1" placeholder="Enter Password">
+            <br><br>
+            <label for="">Comfirm your Password</label>
+            <input type="password" name="password" id="password1" placeholder="Comfirm your Password">
+            <br><br>
+            <label for="">Mobile Number</label>
+            <input type="tel" name="mnum" id="mnum" placeholder="Enter Number" max="10">
+            <br><br>
+            <label for="">Enter Email ID</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <br><br>
+            <label for="">Select Your Highest Education</label>
+            <select name="education" id="education1">
+                <optgroup label="Graduation">
+                    <option value="" disabled selected>Select Education</option>
+                    <option value="">B.sc</option>
+                    <option value="">BCA</option>
+                    <option value="">B.A</option>
+                    <option value="">B.Com</option>
+                    <option value="">B.ed</option>
+                    <option value="">B.Tech</option>
+                </optgroup>
+                <optgroup label="Post Graduation">
+                    <option value="">M.sc</option>
+                    <option value="">MCA</option>
+                    <option value="">M.A</option>
+                    <option value="">M.com</option>
+                    <option value="">M.Tech</option>
+                </optgroup>
+                <Optgroup label="Others">
+                    <option value="">Pg Diploma</option>
+                    <option value="">Others</option>
+                </Optgroup>
+            </select>
+            <br><br>
+            <label for="">Select Course:</label><br>
+            <input type="radio" name="course" value="FullStackwithJava">FullStack With Java
+            <input type="radio" name="course" value="FullStackwithPython">FullStack With Python
+            <input type="radio" name="course" value="testing">Software Testing <br>
+            <input type="radio" name="course" value="AI/ML">AI/ML
+            <input type="radio" name="course" value=".NET">.NET
+            <br><br>
+            <label for="">Upload Passport Size Photo<br></label>
+            <input type="file" name="Photo" id="photo1" accept=".jpg">
+            <br>
+            <small>Passport file type should be in jpg format</small>
+            <br><br>
+            <label for="">Upload Resume</label><br>
+            <input type="file" name="resume" id="resume1" accept=".pdf">
+            <br><br>
+            <input type="submit" value="Register">
+            <input type="reset" value="Reset">
+            <br><br>
+            <a href="home_page.html">Go To Home Page</a>
+            <br>
+            <a href="login_page.html">Go To Login Page</a>
+        </form>
+    </div>
+</body>
+
+</html>
